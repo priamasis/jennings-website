@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Spend Audit | Jennings Business Intelligence</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Urgency Banner -->
+    <div class="urgency-banner">
+        <p>⏳ Save $200 off the Advanced Audit — Offer ends in <span id="countdown">15:00</span></p>
+    </div>
+
+    <!-- Cursor & Background -->
+    <div class="cursor-glow"></div>
+    <div class="bg-animation">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="grid-overlay"></div>
+    </div>
+
+    <!-- Sticky Nav -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <img src="https://z-cdn-media.chatglm.cn/files/d312f231-787d-4973-9359-2648b1b0e879.png?auth_key=1887901212-70d586d9ad844c7c9c294c37429d1af0-0-10ca11a529470f9aed220acd796587bd" alt="JBI Logo" class="nav-logo">
+            <div class="nav-actions">
+                <button class="nav-login" id="loginTrigger">Log In</button>
+                <button class="nav-signup" id="signupTrigger">Sign Up</button>
+                <div class="user-badge hidden" id="userBadge">
+                    <span id="userName">Guest</span>
+                    <button id="logoutBtn" class="logout-btn">Log Out</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero">
+        <div class="container">
+            <p class="tagline">DATA. INSIGHT. STRATEGY. GROWTH.</p>
+            <h2>Stop Leaking Revenue.<br><span class="gradient-text">Start Intelligent Savings.</span></h2>
+            <p class="subhead">Most businesses overpay by 15-20% on unseen operational costs. Our Business Spend Audit uses data-driven intelligence to find your hidden money — guaranteed.</p>
+            <a href="#calculator" class="hero-cta">Calculate Your Potential Savings ↓</a>
+        </div>
+    </header>
+
+    <!-- Animated Stats -->
+    <section class="stats-bar reveal">
+        <div class="container stats-grid">
+            <div class="stat-item"><h4 class="counter" data-target="2400000">$0</h4><p>Saved for Clients</p></div>
+            <div class="stat-item"><h4 class="counter" data-target="340">0</h4><p>Audits Completed</p></div>
+            <div class="stat-item"><h4 class="counter" data-target="18">0%</h4><p>Avg. Cost Reduction</p></div>
+        </div>
+    </section>
+
+    <!-- Interactive ROI Calculator -->
+    <section class="calculator-section reveal" id="calculator">
+        <div class="container">
+            <h3>How Much Are You Overpaying?</h3>
+            <p class="section-sub">Drag the slider to match your average monthly business expenses. Watch how much you could be losing right now.</p>
+            
+            <div class="calculator-box">
+                <div class="calc-slider-container">
+                    <label for="expenseSlider">Monthly Expenses: <span id="expenseDisplay">$10,000</span></label>
+                    <input type="range" min="1000" max="100000" step="1000" value="10000" id="expenseSlider" class="slider">
+                </div>
+                <div class="calc-result">
+                    <p class="calc-label">Estimated Annual Loss</p>
+                    <h4 id="lossAmount">$21,600</h4>
+                    <p class="calc-subtext">Based on an 18% industry average of unseen vendor creep and redundant software.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem / Solution -->
+    <section class="problem-solution reveal">
+        <div class="container">
+            <h3>The Hidden Cost of Doing Business</h3>
+            <div class="ps-grid">
+                <div class="ps-card"><div class="ps-icon">📉</div><h4>Blind Spots</h4><p>You’re too busy running operations to micro-manage every SaaS subscription, vendor invoice, and software seat.</p></div>
+                <div class="ps-card"><div class="ps-icon">💸</div><h4>Vendor Creep</h4><p>Vendors slowly increase rates over time. If you aren't auditing annually, you are almost certainly overpaying.</p></div>
+                <div class="ps-card"><div class="ps-icon">🧩</div><h4>Redundancy</h4><p>Different departments buying different tools for the exact same problem. We consolidate and optimize.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials reveal">
+        <div class="container">
+            <h3>Trusted by Scaling Businesses</h3>
+            <div class="testimonial-grid">
+                <div class="t-card">
+                    <p>"Jennings found $4,200 a month in unused software licenses we didn't even know we were paying for. The ROI on this audit was instant."</p>
+                    <div class="t-author"><div class="t-avatar">S</div><div><strong>Sarah Jenkins</strong><br><span>CEO, TechFlow</span></div></div>
+                </div>
+                <div class="t-card">
+                    <p>"I thought our books were tight. The Advanced Audit showed us we were overpaying our logistics vendor by 22%. Truly eye-opening."</p>
+                    <div class="t-author"><div class="t-avatar">M</div><div><strong>Mark Donovan</strong><br><span>Founder, ApexLogix</span></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="pricing-section reveal" id="pricing">
+        <div class="container">
+            <h3>Choose Your Audit Level</h3>
+            <p class="section-sub">Select a package below. The payment button will automatically update to your choice.</p>
+            
+            <div class="pricing-grid">
+                <div class="price-card" data-tier="1" data-price="297" data-url="https://your-payment-link-tier-1.com">
+                    <h4>Essential Audit</h4>
+                    <p class="price">$297</p>
+                    <p class="price-desc">Perfect for small businesses needing a quick financial pulse check.</p>
+                    <ul>
+                        <li><span class="check">✓</span> 1-Month Expense Review</li>
+                        <li><span class="check">✓</span> SaaS & Software Audit</li>
+                        <li><span class="check">✓</span> Top 5 Cost-Cutting Opportunities</li>
+                        <li><span class="check">✓</span> Digital PDF Report</li>
+                        <li><span class="check">✓</span> Delivered in 5 Days</li>
+                    </ul>
+                </div>
+
+                <div class="price-card active" data-tier="2" data-price="497" data-url="https://your-payment-link-tier-2.com">
+                    <div class="badge">Most Popular</div>
+                    <h4>Advanced Audit + Strategy</h4>
+                    <p class="price">$497</p>
+                    <p class="price-desc">A deep dive with a personalized action plan and strategy call.</p>
+                    <ul>
+                        <li><span class="check">✓</span> 3-Month Deep Expense Review</li>
+                        <li><span class="check">✓</span> Vendor & Contract Analysis</li>
+                        <li><span class="check">✓</span> Comprehensive Savings Report</li>
+                        <li><span class="check">✓</span> Step-by-Step Action Plan</li>
+                        <li><span class="check">✓</span> 30-Min Strategy Call</li>
+                        <li><span class="check">✓</span> Priority Delivery (3 Days)</li>
+                    </ul>
+                </div>
+
+                <div class="price-card" data-tier="3" data-price="997" data-url="https://your-payment-link-tier-3.com">
+                    <h4>Enterprise Quarterly</h4>
+                    <p class="price">$997</p>
+                    <p class="price-desc">Ongoing support for scaling companies with complex finances.</p>
+                    <ul>
+                        <li><span class="check">✓</span> Everything in Advanced</li>
+                        <li><span class="check">✓</span> Full Annual Spend Breakdown</li>
+                        <li><span class="check">✓</span> Quarterly Audit Reviews (4x/Year)</li>
+                        <li><span class="check">✓</span> 90-Min Monthly Strategy</li>
+                        <li><span class="check">✓</span> Vendor Negotiation Scripts</li>
+                        <li><span class="check">✓</span> Dedicated Support Line</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guarantee Section -->
+    <section class="guarantee reveal">
+        <div class="container">
+            <div class="guarantee-box">
+                <div class="g-icon">🛡️</div>
+                <div class="g-text">
+                    <h4>100% Money-Back Savings Guarantee</h4>
+                    <p>If we audit your expenses and cannot identify at least the cost of the audit in potential annual savings, we will refund you immediately. You have zero risk.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section reveal">
+        <div class="container">
+            <h3>Frequently Asked Questions</h3>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question">Is my financial data secure? <span class="faq-icon">+</span></button>
+                    <div class="faq-answer"><p>Absolutely. We use encrypted, read-only portals for document upload. We do not store your sensitive credentials, and all data is deleted 30 days after delivery.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">What if you don't find any savings? <span class="faq-icon">+</span></button>
+                    <div class="faq-answer"><p>We offer a 100% Money-Back Guarantee. If we audit your expenses and cannot find at least the cost of the audit in potential annual savings, we will refund you.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">What format should my documents be in? <span class="faq-icon">+</span></button>
+                    <div class="faq-answer"><p>We accept CSV, Excel, PDF, or direct exports from accounting software like QuickBooks, Xero, or Expensify.</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main CTA -->
+    <section class="cta-section reveal" id="main-cta">
+        <div class="container">
+            <h3>Secure Your Audit Today</h3>
+            <p class="cta-sub">Complete payment first → Booking link sent immediately after confirmation</p>
+            <button class="pay-button" id="dynamic-cta" onclick="goToPayment()">PAY $497 & BOOK LATER</button>
+            <p class="small-text">🔒 100% Money-Back Guarantee if no savings identified</p>
+        </div>
+    </section>
+
+    <!-- Sticky Mobile CTA Bar -->
+    <div id="sticky-cta-bar">
+        <div class="sticky-info">
+            <span id="sticky-tier">Advanced Audit</span>
+            <span id="sticky-price" class="sticky-price">$497</span>
+        </div>
+        <button class="sticky-btn" onclick="goToPayment()">PAY NOW</button>
+    </div>
+
+    <div id="authModal" class="auth-modal hidden" aria-hidden="true">
+        <div class="auth-modal-backdrop" data-close-auth="true"></div>
+        <div class="auth-card" role="dialog" aria-modal="true" aria-labelledby="authTitle">
+            <button class="auth-close" id="closeAuthModal" aria-label="Close authentication dialog">×</button>
+            <div class="auth-header">
+                <p class="auth-kicker">Welcome</p>
+                <h3 id="authTitle">Create your account</h3>
+            </div>
+
+            <div class="auth-tabs">
+                <button class="auth-tab active" data-auth-tab="signin" type="button">Sign In</button>
+                <button class="auth-tab" data-auth-tab="signup" type="button">Sign Up</button>
+            </div>
+
+            <div class="provider-grid">
+                <button class="provider-btn" data-provider="GitHub" type="button">GitHub</button>
+                <button class="provider-btn" data-provider="Google" type="button">Google</button>
+                <button class="provider-btn" data-provider="Email" type="button">Email</button>
+                <button class="provider-btn" data-provider="Facebook" type="button">Facebook</button>
+                <button class="provider-btn" data-provider="TikTok" type="button">TikTok</button>
+            </div>
+
+            <div class="divider"><span>or continue with email</span></div>
+
+            <form id="signinForm" class="auth-form active">
+                <label>
+                    Email
+                    <input type="email" name="email" placeholder="you@example.com" required>
+                </label>
+                <label>
+                    Password
+                    <input type="password" name="password" placeholder="Enter your password" required>
+                </label>
+                <button type="submit" class="auth-submit">Sign In</button>
+            </form>
+
+            <form id="signupForm" class="auth-form">
+                <label>
+                    Full Name
+                    <input type="text" name="name" placeholder="Your full name" required>
+                </label>
+                <label>
+                    Email
+                    <input type="email" name="email" placeholder="you@example.com" required>
+                </label>
+                <label>
+                    Password
+                    <input type="password" name="password" placeholder="Create a password" required>
+                </label>
+                <button type="submit" class="auth-submit">Create Account</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container"><p>Jennings Business Intelligence • All Rights Reserved</p></div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
